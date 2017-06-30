@@ -1,0 +1,71 @@
+	.boundingBox {
+		border: 1px solid #ccc;
+		position: absolute;
+		z-index: 11;
+		background: #fff;
+	}
+	
+	.boundingBtn {
+		position: absolute;
+		bottom: 30px;
+	}
+	
+	.boundingHeader {
+		height: 40px;
+		line-height: 40px;
+		background: #fafafa;
+		font-size: 14px;
+		padding-left: 15px;
+	}
+	
+	.closeBtn {
+		position: absolute;
+		right: 15px;
+		top: 10px;
+		width: 20px;
+		height: 20px;
+		background: darkred;
+		color: #FAFAFA;
+		text-align: center;
+		line-height: 20px;
+	}
+	
+	.closeBtn:hover {
+		background: blue;
+	}
+	.window_mask{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,.3);
+		left: 0;
+		top: 0;
+		z-index: 9;
+	}
+	
+	
+	.skin_a.boundingBox{
+		border-color: red;
+	}
+	.skin_a .boundingHeader{
+		background-color: red
+	}
+	.skin_a .closeBtn{
+		background: darkred;
+	}
+.skin_a .closeBtn:hover{
+	background-color: #8B0000;
+}
+
+.skin_b.boundingBox{
+	border-color: green
+}
+.skin_b .boundingHeader{
+	background-color: green;
+}
+.skin_b .closeBtn{
+	background-color: darkgreen;
+}
+.skin_b .closeBtn:hover{
+	background-color: greenyellow;
+}
