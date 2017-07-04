@@ -16,6 +16,7 @@
 		background: #fafafa;
 		font-size: 14px;
 		padding-left: 15px;
+		cursor: move;
 	}
 	
 	.closeBtn {
@@ -28,6 +29,7 @@
 		color: #FAFAFA;
 		text-align: center;
 		line-height: 20px;
+		cursor: pointer;
 	}
 	
 	.closeBtn:hover {

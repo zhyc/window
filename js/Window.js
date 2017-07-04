@@ -1,4 +1,4 @@
-define(['jquery'], function(){
+define(['jquery','jqueryUI'], function($, $UI){
 	function Window(){
 		this.cfg = {
 			width : 500,
@@ -9,7 +9,9 @@ define(['jquery'], function(){
 			handle : null,
 			hasMask:true,
 			skinClassName:null,
-			hasCloseBtn: false
+			hasCloseBtn: false,
+			isDrag: true,
+			dragHandle:null
 			
 		};
 		
@@ -57,6 +59,11 @@ define(['jquery'], function(){
 				if(CFG.hasMask){
 					mask = $('<div class="window_mask"></div>');
 					mask.appendTo('body');
+				}
+				if(CFG.isDrag){
+					boundingBox.draggable({handle:CFG.dragHandle});
+				}else{
+					boundingBox.draggable();
 				}
 		},
 		confirm : function(){

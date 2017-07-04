@@ -1,6 +1,7 @@
 require.config({
 	paths : {
-		jquery : 'jquery-1.11.0'
+		jquery : 'jquery-1.11.0',
+		jqueryUI:"jquery-ui"
 	}
 })
 
@@ -22,7 +23,9 @@ require(['jquery','Window'] , function($, w){
 			height: 200,
 			btnTitle:"试一试",
 			skinClassName: "skin_b",
-			hasCloseBtn: true
+			hasCloseBtn: true,
+			isDrag: true,
+			dragHandle:".boundingHeader"
 		})
 
 	})
